@@ -1,0 +1,42 @@
+<md-dialog aria-label="Pef grade">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>onPoint UDEM</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="demoCtrl.cancel_dialog()">
+          <md-icon md-font-set="material-icons">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <div flex layout="column">
+          <label>Calificacion</label>
+          <md-slider flex md-discrete ng-model="demoCtrl.calificacion" step="1" min="1" max="5" aria-label="rating"></md-slider>
+          <md-input-container flex>
+            <label>Comentarios</label>
+            <input type="text">
+          </md-input-container>
+          <label class="md-subhead">Informacion de contacto</label>
+          <md-input-container flex>
+            <label>Correo</label>
+            <input type="text">
+          </md-input-container>
+          <md-input-container flex>
+            <label>Telefono</label>
+            <input type="text">
+          </md-input-container>
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button ng-click="demoCtrl.cancel_dialog()">
+        Cancelar
+      </md-button>
+      <span flex></span>
+      <md-button ng-click="demoCtrl.submit_dialog()">
+        Enviar
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

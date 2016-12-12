@@ -1,0 +1,66 @@
+<md-dialog aria-label="Pef grade">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>onPoint UDEM</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="demoCtrl.cancel_dialog()">
+          <md-icon md-font-set="material-icons">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <div flex layout="column">
+          <label>Lugar</label>
+          <md-select ng-model="demoCtrl.lugar">
+            <md-option ng-value="1">
+              CIAA
+            </md-option>
+            <md-option ng-value="1">
+              Talento Becario
+            </md-option>
+          </md-select>
+        </div>
+        <div flex layout="column" ng-show="demoCtrl.lugar" layout-padding>
+          <div flex layout layout-align="start center">
+            <md-icon md-font-set="material-icons" ng-hide="demoCtrl.steps[0]">directions</md-icon>
+            <md-icon md-font-set="material-icons" style="color: lightgreen" ng-show="demoCtrl.steps[0]">check</md-icon>
+            <span flex ng-class="{ 'color-green': demoCtrl.steps[0] }">Dirigete hacia la derecha del lobby</span>
+          </div>
+          <md-divider></md-divider>
+          <div flex layout layout-align="start center">
+            <md-icon md-font-set="material-icons"  ng-hide="demoCtrl.steps[1]">directions_run</md-icon>
+            <md-icon md-font-set="material-icons" style="color: lightgreen" ng-show="demoCtrl.steps[1]">check</md-icon>
+            <span flex ng-class="{ 'color-green': demoCtrl.steps[1] }">Sube las escaleras</span>
+          </div>
+          <md-divider></md-divider>
+          <div flex layout layout-align="start center">
+            <md-icon md-font-set="material-icons"  ng-hide="demoCtrl.steps[2]">directions_walk</md-icon>
+            <md-icon md-font-set="material-icons" style="color: lightgreen" ng-show="demoCtrl.steps[2]">check</md-icon>
+            <span flex ng-class="{ 'color-green': demoCtrl.steps[2] }">Toma hacia tu mano derecha</span>
+          </div>
+          <md-divider></md-divider>
+          <div flex layout layout-align="start center">
+            <md-icon md-font-set="material-icons"  ng-hide="demoCtrl.steps[3]">directions_walk</md-icon>
+            <md-icon md-font-set="material-icons" style="color: lightgreen" ng-show="demoCtrl.steps[3]">check</md-icon>
+            <span flex ng-class="{ 'color-green': demoCtrl.steps[3] }">Continua derecho</span>
+          </div>
+          <md-divider></md-divider>
+          <div flex layout layout-align="start center">
+            <md-icon md-font-set="material-icons"  ng-hide="demoCtrl.steps[4]">place</md-icon>
+            <md-icon md-font-set="material-icons" style="color: lightgreen" ng-show="demoCtrl.steps[4]">check</md-icon>
+            <span flex ng-class="{ 'color-green': demoCtrl.steps[4] }">Tercera puerta a la derecha</span>
+          </div>
+          <md-divider></md-divider>
+        </div>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout layout-align="end center" ng-show="demoCtrl.lugar">
+      <md-button>
+        <md-icon md-font-set="material-icons">help</md-icon>
+        Ayuda
+      </md-button>
+    </md-dialog-actions>  
+  </form>
+</md-dialog>

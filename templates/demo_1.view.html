@@ -1,0 +1,102 @@
+<div>
+    <md-toolbar class="md-hue-2" md-whiteframe="3">
+      <div class="md-toolbar-tools">
+        <h2>
+          <span>Proyectos exitosos</span>
+        </h2>
+      </div>
+    </md-toolbar>
+    <md-button class="md-accent md-fab md-fab-bottom-right" ng-hide="homeCtrl.loading" ng-click="demoCtrl.open_dialog( $event )">
+      <md-icon md-font-set="material-icons">star_rate</md-icon>
+    </md-button>
+    <div flex layout layout-align="center center" layout-margin ng-show="homeCtrl.loading">
+      <md-progress-circular class="md-accent" md-mode="indeterminate" md-diameter="100" ng-disabled="!homeCtrl.loading"></md-progress-circular>
+    </div>
+    <md-content flex ng-hide="homeCtrl.loading" layout-margin style="height: 85vh;" ng-cloak>
+      <div flex layout="column" layout-align="center start">
+        <span class="md-title" flex>OnPoint UDEM</span>
+        <span class="md-subhead" flex>Sistema para localización y presentación de información relevante utilizando beacons</span>
+      </div>
+      <div flex layout layout-align="start center">
+        <h2 class="md-subhead">Cliente</h2>
+      </div>
+      <div flex layout="column" layout-align="center start">
+        <span class="md-body-1">Martín Gerardo Jiménez Vega</span>
+      </div>
+      <div flex layout layout-align="start center">
+        <h2 class="md-subhead">Objetivo</h2>
+      </div>
+      <div flex layout="column" layout-align="center start">
+        <span class="md-body-1">Comunicar información de la UDEM y mostrar mediante el desarrollo e implementación de una aplicación móvil y beacons información contextual de lugares de interés al usuario.</span>
+      </div>
+      <div flex layout layout-align="start center">
+        <h2 class="md-subhead">Características</h2>
+      </div>
+      <div flex layout="column" layout-align="center start">
+        <md-list flex>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Mostrar información relevante sobre laboratorios, programas académicos y lugares icónicos.</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Presentar los pasos para llegar a un destino si se entra como visitante.</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Diseño de una topología de la red de los beacons.</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+        </md-list>
+      </div>
+      <div flex layout layout-align="start center">
+        <h2 class="md-subhead">Tecnologías</h2>
+      </div>
+      <div flex layout layout-align="start center" layout-wrap>
+        <md-list flex="100">
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>PHP</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>CodeIgnitier</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>MySQL</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Objective-C</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Java</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Estimote SDK</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+        </md-list>
+      </div>
+      <div flex layout style="height:50px"></div>
+    </md-content>
+</div>

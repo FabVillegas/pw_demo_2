@@ -1,0 +1,105 @@
+<div>
+    <md-toolbar class="md-hue-2" md-whiteframe="3">
+      <div class="md-toolbar-tools">
+        <h2>
+          <span>onPoint</span>
+        </h2>
+      </div>
+    </md-toolbar>
+    <md-button class="md-accent md-fab md-fab-bottom-right" ng-hide="homeCtrl.loading" ng-click="demoCtrl.open_dialog( $event )">
+      <md-icon md-font-set="material-icons">navigation</md-icon>
+    </md-button>
+    <div flex layout layout-align="center center" layout-margin ng-show="homeCtrl.loading">
+      <md-progress-circular class="md-accent" md-mode="indeterminate" md-diameter="100" ng-disabled="!homeCtrl.loading"></md-progress-circular>
+    </div>
+    <md-content flex ng-hide="homeCtrl.loading" layout-margin style="height: 85vh;" ng-cloak>
+      <div flex layout="column" layout-align="center start">
+        <span class="md-title" flex>
+            <md-icon md-font-set="material-icons">place</md-icon>
+            Rectoria
+        </span>
+      </div>
+      <div flex layout layout-align="start center">
+        <img src="./assets/rectoria.jpg" style="width: 100%; height: auto;" />
+      </div>
+      <div flex layout="column">
+        <md-subheader class="md-no-sticky md-primary">
+          <md-icon md-font-set="material-icons">layers</md-icon>
+          Primer piso
+        </md-subheader>
+        <md-list flex>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>CIAA</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Talento Becario</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Lobby</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+        </md-list>
+      </div>
+      <div flex layout="column">
+        <md-subheader class="md-no-sticky md-primary">
+          <md-icon md-font-set="material-icons">layers</md-icon>
+          Segundo piso
+        </md-subheader>
+        <md-list flex>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Sala Polivalente</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Oficinas Administrativas</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Finanzas y nomina</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+        </md-list>
+      </div>
+      <div flex layout="column">
+        <md-subheader class="md-no-sticky md-primary">
+          <md-icon md-font-set="material-icons">event</md-icon>
+          Eventos de hoy
+        </md-subheader>
+        <md-list flex>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Entrevistas con alumnos</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Proyectos Exitosos</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+          <md-list-item class="md-2-line">
+            <div class="md-list-item-text">
+              <p>Entregas de birretes y togas</p>
+            </div>
+            <md-divider></md-divider>
+          </md-list-item>
+        </md-list>
+      </div>
+      <div flex layout style="height:50px"></div>
+    </md-content>
+</div>
